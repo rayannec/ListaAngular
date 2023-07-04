@@ -24,8 +24,13 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Projeto Angular</span>
-    </mat-toolbar>
-    <!-- Add Content Here -->
+      <span class="spacer"></span>
+      
+    
+    <mat-slide-toggle (click)="toggleTheme()" color="primary">
+    <span>Dark mode</span>
+  </mat-slide-toggle>
+</mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

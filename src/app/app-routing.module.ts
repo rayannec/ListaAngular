@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./layout/lista-clientes/lista-clientes.module').then(modulo => modulo.ListaClientesModule)
   },
   {
-    path: '',
+    path: 'cartao',
     component: AuthenticationComponent,
     children: [
       { path: '', redirectTo:'login', pathMatch:'full'},
