@@ -20,6 +20,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { FlexModule } from '@angular/flex-layout/flex';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     FlexModule,
     MatSlideToggleModule
   ],
-  providers: [HttpClient],
+  providers: [HttpClient, OverlayContainer],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

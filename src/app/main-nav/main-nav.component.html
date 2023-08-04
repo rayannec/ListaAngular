@@ -26,10 +26,8 @@
       <span>Projeto Angular</span>
       <span class="spacer"></span>
       
-    
-    <mat-slide-toggle (click)="toggleTheme()" color="primary">
-    <span>Dark mode</span>
-  </mat-slide-toggle>
+    <mat-slide-toggle [formControl]="toggleControl" color="primary"></mat-slide-toggle>
+  <span>Dark mode</span>
 </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
